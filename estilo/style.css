@@ -159,3 +159,27 @@ section.secundarioImagem{
 :visited: detecta quando o link <a> já foi visitado, ou seja, se você já clicou anteriormente naquele link.
 
 :link: detecta quando é um link <a> que nunca foi clicado antes.*/
+
+@media screen and (max-width: 390px){
+
+    .container{
+        background-image: none;
+    }
+    .principal{
+        background-image: url("/imagens/Background.png");
+        display: flex;
+        align-items: center;
+    }
+    .Secundario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .secundarioImagem{
+        height: 300px;
+        width: auto;
+    }
+    .containerDescricao{
+        
+    }
+}
