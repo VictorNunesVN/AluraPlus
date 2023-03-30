@@ -159,11 +159,23 @@ section.secundarioImagem{
 :visited: detecta quando o link <a> já foi visitado, ou seja, se você já clicou anteriormente naquele link.
 
 :link: detecta quando é um link <a> que nunca foi clicado antes.*/
+.imgSecundario_380{
+    display: none;
+}
 
-@media screen and (max-width: 390px){
-
+@media (max-width: 390px){
+    .imgSecundario_1024{
+        display: none;
+    }
+    .imgSecundario_380{
+        display: block;
+    }
     .container{
+        height: 100vh;
         background-image: none;
+        display: flex;
+        justify-content: space-between;
+
     }
     .principal{
         background-image: url("/imagens/Background.png");
@@ -173,13 +185,25 @@ section.secundarioImagem{
     .Secundario{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        gap: 10px;
+    }
+    .containerDescricao{
+        display: flex;
+        flex-direction: column;
     }
     .secundarioImagem{
         height: 300px;
         width: auto;
     }
-    .containerDescricao{
+    .descricaoTitulo{
+        font-weight: 700;
+        font-size: 38px;
+    }
+    .dispositivos__lista{
+        flex-direction: column;
+    }
+    .descricaoParagrafo{
         
     }
+    
 }
